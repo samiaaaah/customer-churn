@@ -71,7 +71,7 @@ def set_background_image(image_url):
 
 def main():
     # Set the background image URL
-    background_image_url = "https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    background_image_url = "https://wallpapercosmos.com/w/middle-retina/f/7/9/584472-3840x2160-desktop-4k-restaurant-background-image.jpg"
 
 
 
