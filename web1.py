@@ -7,8 +7,11 @@ import joblib
 #model
 rf_model = joblib.load('random_forest_model.pkl')
 
-df=joblib.load('df.pkl')
-st.title("Customer Churn Prediction App")
+
+
+# Use HTML to add white color to the title
+st.markdown("<h1 style='color: white;'>Customer Churn Prediction App</h1>", unsafe_allow_html=True)
+
 CreditScore=st.number_input('CreditScore', min_value=350, max_value=850)
 Age=st.number_input('Age', min_value=0, max_value=100)
 Tenure=st.number_input('Tenure',step=1.,format="%.0f")
@@ -19,8 +22,7 @@ IsActiveMember=st.selectbox('IsActiveMember',[0,1])
 EstimatedSalary=st.number_input('EstimatedSalary',min_value=0)
 Gender=st.selectbox('Gender',['Male','Female'])
 Geography=st.selectbox('Geography',['Germany','Spain','France'])
-st.subheader("Loaded DataFrame:")
-st.dataframe(df)
+
 if st.button('Predict'):
     girl=0
     if Gender=='Female':
@@ -71,7 +73,7 @@ def set_background_image(image_url):
 
 def main():
     # Set the background image URL
-    background_image_url = "https://wallpapercosmos.com/w/middle-retina/f/7/9/584472-3840x2160-desktop-4k-restaurant-background-image.jpg"
+    background_image_url = "https://wallpapercrafter.com/sizes/3840x2160/241714-cafe-bar-counter-with-customers-in-the-background_.jpg"
 
 
 
@@ -82,8 +84,8 @@ def main():
     custom_css = """
        <style>
        body {
-           background-color: #4699d4;
-           color: #ffffff;
+           background-color: #492581;
+           color: #492581;
            font-family: Arial, sans-serif;
        }
        select {
